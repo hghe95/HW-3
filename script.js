@@ -59,11 +59,11 @@ function generatePassword() {
     }
 
     //Failsafe to make sure that at least one of the criteria is chosen
-    if (includedChars === []) {
+    if (includedChars.length === 0) {
       alert("You must select at least one criteria!");
       return ""
     } 
-    
+
     // Asking the user the length of the password
     let passwordLength = prompt("How long would you like the password to be? Please respond in a number that is between 8 and 128. ");
     passwordLength = parseInt(passwordLength);
